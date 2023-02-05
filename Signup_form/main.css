@@ -1,0 +1,23 @@
+.form-control {
+    margin-top: 20px;
+
+}
+
+label {
+    width:200px;
+    
+    font-family: sans-serif;
+
+}
+
+form {
+
+    background-color:powderblue;
+    border: solid black;
+    padding-left: 20px;
+    margin-right: 680px;
+    margin-left: 500px;
+    border-radius: 2vb;
+    
+}
+

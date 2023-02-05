@@ -1,0 +1,38 @@
+body {
+    background-color: bisque;
+}
+
+.new1 {
+    border-top: 3px solid blueviolet;
+    width: 50%;
+}
+
+table, th, td{
+    border:1px solid black;
+    
+}
+
+embed {
+    padding-left: 400px;
+    margin-top: 30px;
+}
+
+h2 {
+    padding-left: 400px;
+    color: blue;
+}
+
+ul {
+    padding-left: 450px;
+    margin-top: 30px;
+}
+
+li {
+    margin-top: 10px;
+}
+
+img {
+    height: 30px;
+    margin-left: 300px;
+    margin-top: 10px;
+}

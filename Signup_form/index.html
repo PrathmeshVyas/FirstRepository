@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<body>
+    <div class="container" style="height: 500px;">
+        <h2 style="margin-left:500px">Employee  Form</h2>
+        <form method="POST" class="form-control">
+            <label for="name">Name</label>
+            <input type="text" name="name" class="form-control" id="name" placeholder=" enter employee name" required><br>
+            <label for="age">Age</label>
+            <input type="number" name="age" min="18" class="form-control" id="age" placeholder="enter age" required><br>
+            <label for="gender">Gender</label>
+            <input type="radio" id="male" class="form-control" name="gender" value="male" required>
+            <label for="male"style="margin-left:0px;">male</label>
+            <input type="radio" id="female" class="form-control" name="gender" value="female" required>
+            <label for="female" style="margin-left:0px;">female</label><br>
+            <label for="designation">Designation</label>
+            <input type="text" name="designation" class="form-control" id="designation" placeholder="enter designation" required><br>
+            <label for="salary">Salary</label>
+            <input type="text" name="salary" class="form-control" id="salary" placeholder="enter salary" required><br>
+            <label for="location">Select Location
+            <select name="cities" id="cities" class="form-control" required>
+                <option>select</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Pune">Pune</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Banglore">Banglore</option>
+            </select><br>
+            <label for="email">Email-id</label>
+            <input type="email" class="form-control" pattern=".*@gmail.com" name="email" id="email" placeholder="youremail@gmail.com" required><br>
+            <label for="doj">Date of Joining</label>
+            <input type="date" class="form-control" value="2020-13-01" required><br>
+            <label for="contact">Contact number</label>
+            <input type="text" class="form-control" name="concact" id="contact" minlength="10"   maxlength="10" placeholder="enter contact number" required><br>
+            <input type="submit" value="Submit" style="margin-left:100px; margin-top: 10px; border-radius: 2vb; margin-bottom: 10px; background-color: red;">
+
+        </form>
+    </div>
+</body>
+</html>
