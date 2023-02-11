@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    .sidebar {
+        height: fit-content;
+        width:250px; 
+    
+    }
+    .rightbar {
+        flex-wrap:wrap;
+        height: fit-content; 
+        margin-left:400px;
+        width:1200px; 
+        border:1px solid black;
+        border-radius:5px;
+        
+
+    }
+
+    .child li {
+        font-family: sans-serif;
+    }
+
+    .parent{
+        display:flex;
+        padding:0px;
+    }
+    .child {
+        border: 1px solid black;
+        height: 40px;
+        width: 250px;
+        background-color: black;
+        border-radius: 5px;
+    }
+
+    h4 {
+        margin-left: 10px;
+        color:white;
+    }
+    .header {
+        width: 100%;
+        height: 50px;
+        color: white;
+        background-color: black;
+        margin-top: -21px;
+        text-align: center;
+    }
+    .child2 {
+        display:flex;
+        gap: 300px;
+    }
+    .child2 li {
+        list-style-type: none;
+        padding-top: 10px;
+        margin-left:-30px;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="sidebar">
+            <div class="child"><h4>Public</h4></div>
+            <ul>
+                <li>link 1</li>
+                <li>link 2</li>
+            </ul>
+            <div class="child"><h4>View</h4></div>
+            <ul>
+                <li>link 1</li>
+                <li>link 2</li>
+                <li>link 3</li>
+                <li>link 4</li>
+                <li>link 5</li>
+                <li>link 6</li>
+            </ul>
+            <div class="child"><h4>Hr</h4></div>
+            <ul>
+            <li>Address details</li>
+            <li>Family details</li>
+            </ul>
+            <div class="child"><h4>Network Details</h4></div>
+            <ul>
+            <li>Vehical details</li>
+            <li>Machine Details</li>
+            </ul>
+        </div>
+        <div class="rightbar">
+            <div class="header">
+                <h1>Details</h1>
+            </div>
+            <div class="child2">
+                <ol>
+                    <li><strong>Name :</strong>abc</li>
+                    <li><strong>Value :</strong>def</li>
+                    <li><strong>Extra :</strong>xyz</li>
+                </ol>
+                <ol>
+                    <li><strong>Name :</strong>abc</li>
+                    <li><strong>Value :</strong>def</li>
+                    <li><strong>Extra :</strong>xyz</li>
+                </ol>
+                <ol>
+                    <li><strong>Name :</strong>abc</li>
+                    <li><strong>Value :</strong>def</li>
+                    <li><strong>Extra :</strong>xyz</li>
+                </ol>
+            </div>
+            <div class="child2">
+                <ol>
+                    <li><strong>Name :</strong>abc</li>
+                    <li><strong>Value :</strong>def</li>
+                    <li><strong>Extra :</strong>xyz</li>
+                </ol>
+                <ol>
+                    <li><strong>Name :</strong>abc</li>
+                    <li><strong>Value :</strong>def</li>
+                    <li><strong>Extra :</strong>xyz</li>
+                </ol>
+                <ol>
+                    <li><strong>Name :</strong>abc</li>
+                    <li><strong>Value :</strong>def</li>
+                    <li><strong>Extra :</strong>xyz</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
