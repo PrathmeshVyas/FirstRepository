@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        .sidebar .image img{
+            height:250px;
+            width:250px;
+            border-radius:150px;
+            border:1px solid black;
+        }
+        .sidebar .image {
+            width: fit-content;
+            text-align: center;
+            color: white;
+        }
+        .sidebar{
+            background-color: rgb(70, 74, 78);
+        }
+        .menu {
+            width: fit-content;
+            padding: 50px;
+        }
+        .menu ul {
+            list-style-type: none;
+        }
+        .menu ul li {
+            padding: 20px;
+            font-size: x-large;
+        }
+        .menu ul li label {
+            text-decoration: none;
+            color: white;
+        }
+        .menu ul li label:hover {
+            text-decoration: underline;
+        }
+        .objective {
+            text-align: center;
+            background-color: bisque;
+        }
+        .objective p {
+            text-align: justify;
+            font-size: large;
+            padding: 10px;
+        }
+        .personal {
+            background-color: bisque;
+            text-align: center;
+        }
+        .personal ul li{
+            padding: 10px;
+            font-size: large;
+            text-align: justify;
+        }
+        .experience p {
+            text-align: justify;
+            font-size: large;
+        }
+        .experience {
+            background-color: bisque;
+            text-align: center;
+        }
+        .qualification {
+            text-align: center;
+            background-color: bisque;
+        }
+        .qualification li {
+            padding: 2%;
+            font-size: large;
+            text-align: justify;
+        }
+        .main {
+            text-align: center;
+            padding: 20px;
+            background-color: bisque;
+            margin: 10px;
+        }
+        .main strong {
+            font-size: xx-large;
+        }
+        #obj-inp, #per-inp, #exp-inp, #qua-inp{
+            visibility: hidden;
+        }
+        @media screen and (min-width:600px){
+        .container {
+            display: flex;
+        }
+        .main {
+            width: 100%;
+        }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="sidebar">
+        <div class="image">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.Z306v3XdxhOaxBFGfHku7wHaHw&pid=Api&P=0" alt="">
+            <h1>Prathmesh Vyas</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><label for="obj-inp">Objective</label></li>
+                <li><label for="per-inp">Personal</label></li>
+                <li><label for="exp-inp">Experience</label></li>
+                <li><label for="qua-inp">Qualification</label></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <strong>The Resume</strong>
+    </div>
+    <div class="data">
+    <div class="objective">
+        <h2>Objective</h2>
+        <hr>
+        <p>A highly motivated and detail-oriented software engineer seeking to use my expertise in software development and computer programming to provide innovative solutions and outstanding customer service at ABC Company.
+            An innovative and dedicated software engineer with a proven track record of successful projects and client satisfaction. Seeking to leverage my expertise to improve the software development process at ABC Company.
+            A highly qualified software engineer with a passion for problem-solving and a commitment to providing quality software solutions. Seeking to join ABC Company and use my knowledge and experience to create innovative solutions.
+        </p>
+    </div>
+    <div class="personal">
+        <h2>Personal Details</h2>
+        <hr>
+        <ul>
+            <li>Name: Prathmesh Vyas</li>
+            <li>Contact: 9756325896</li>
+            <li>Date of birth: 25/04/2002</li>
+            <li>Gender: Male</li>
+            <li>Age: 20</li>
+            <li>Location : Ahmedabad Gujarat INDIA</li>
+        </ul>
+    </div>
+    <div class="experience">
+        <h2>Work Experience</h2>
+        <hr>
+        <p>5 year experience in developing, designing and installing software solutions, & improving overall software operations. Possess general programming skills, expertise in software design, debugging, documentation, testing & development fundamentals.</p>
+        <p>A result-oriented professional with 7 years of experience including over 3 years of entrepreneurial experience in PHP, nodejs, javascript, mysql, css and python. Track record of providing solutions to client’s involving design & debugging for cleansing & transforming data according to business rules.</p>
+    </div>
+    <div class="qualification">
+        <h2>Qualification</h2>
+        <hr>
+        <ul>
+            <li>Bachelor of engineering in computer science from Gandinagar Institute of Technology (2020-2023)</li>
+            <li>Diploma engineering in computer science from Government Polytechnic Gandinagar (2017-2020)</li>
+            <li>SSC GSEB Board from Nelson's High School Maninagar Ahmedabad.</li>
+        </ul>
+    </div>
+    </div>
+ </div>   
+ <input type="checkbox" id="obj-inp"><input type="checkbox" id="per-inp"><input type="checkbox" id="exp-inp"><input type="checkbox" id="qua-inp">
+</body>
+</html>
