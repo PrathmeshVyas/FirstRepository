@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <style>
+    header {
+    border:1px solid black;
+    height: 80px;
+    margin-top: 0px;
+    background-color: rgb(62, 69, 74);
+}
+img {
+    float: left;
+    margin-left:40px;
+    margin-top: 10px;
+    height: 60px;
+    background-color: white;
+}
+header ul {
+    float: right;
+    display: flex;
+    list-style-type:none;
+    gap:20px;
+    margin-right:40px;
+    padding: 10px;
+    font-size: medium;
+    font-family:sans-serif;
+}
+header a{
+    text-decoration: none;
+    color: rgb(161, 161, 161);   
+}
+header a:hover{
+    text-decoration:underline;
+}
+.sidebar{
+    padding-left: 25px;
+    background-color: rgb(102, 106, 108);
+    margin-top:0px;
+    margin-left:0px;
+    height: 85vh;
+    width:350px;
+}
+.sidebar ul li{
+    padding-top: 5px;
+}
+.output{
+    float: right;
+    border:1px solid black;
+    width: 100%;
+    margin-top:0px;
+}
+.container {
+    display: flex;
+    margin-top: 10px;
+}
+.form-control {
+    margin-top: 20px;
+
+}
+
+label {
+    width:200px;
+    
+    font-family: sans-serif;
+
+}
+
+form {
+
+    background-color:powderblue;
+    border: solid black;
+    padding-left: 20px;
+    margin-right: 680px;
+    margin-left: 500px;
+    border-radius: 2px;
+    
+}
+    </style>
+</head>
+<body>
+    
+        <header>
+            <img src="logo.png" alt="">
+             <ul>
+                 <li><a href="#" target="_top">Home</a></li>
+                 <li><a href="HTML.html" target="_top">Html</a></li>
+                 <li><a href="CSS.html" target="_top">Css</a></li>
+                 <li><a href="#">Jquery</a></li>
+                 <li><a href="#">Javascript</a></li>
+                 <li><a href="#">Bootstrap</a></li>
+                 <li><a href="#">MiniProject</a></li>
+                 <li><a href="#">SQL</a></li>
+             </ul>
+         </header>
+        <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>Day3
+                    <ul>
+                        <li>Assignment
+                            <ul>
+                                <li><a href="" target="form">Assignment 1</a></li>
+                                <li><a href="h-assignment2.html" >Assignment 2</a></li>
+                            </ul>
+                        </li>
+                        <li>Practice
+                            <ul>
+                                <li><a href="h-practice1.html" target="form">Practice 1</a></li>
+                                <li><a href="h-practice2.html" target="form">Practice 2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="output">
+            <h2 style="margin-left:500px">Employee  Form</h2>
+            <form method="POST" class="form-control">
+                <label for="name">Name</label>
+                <input type="text" name="name" class="form-control" id="name" placeholder=" enter employee name" required><br>
+                <label for="age">Age</label>
+                <input type="number" name="age" min="18" class="form-control" id="age" placeholder="enter age" required><br>
+                <label for="gender">Gender</label>
+                <input type="radio" id="male" class="form-control" name="gender" value="male" required>
+                <label for="male" style="margin-left:0px;">male</label>
+                <input type="radio" id="female" class="form-control" name="gender" value="female" required>
+                <label for="female" style="margin-left:0px;">female</label><br>
+                <label for="designation">Designation</label>
+                <input type="text" name="designation" class="form-control" id="designation" placeholder="enter designation" required><br>
+                <label for="salary">Salary</label>
+                <input type="text" name="salary" class="form-control" id="salary" placeholder="enter salary" required><br>
+                <label for="location">Select Location
+                <select name="cities" id="cities" class="form-control" required>
+                    <option>select</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Banglore">Banglore</option>
+                </select><br>
+                <label for="email">Email-id</label>
+                <input type="email" class="form-control" pattern=".*@gmail.com" name="email" id="email" placeholder="youremail@gmail.com" required><br>
+                <label for="doj">Date of Joining</label>
+                <input type="date" class="form-control" value="2020-13-01" required><br>
+                <label for="contact">Contact number</label>
+                <input type="text" class="form-control" name="concact" id="contact" minlength="10"   maxlength="10" placeholder="enter contact number" required><br>
+                <input type="submit" value="Submit" style="margin-left:100px; margin-top: 10px; margin-bottom: 10px; background-color: red;">
+    
+            </form>
+        </div>
+</div>
+</body>
+
+</html>

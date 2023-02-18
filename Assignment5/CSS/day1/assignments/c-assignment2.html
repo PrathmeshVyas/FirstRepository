@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment2</title>
+    <style>
+    header {
+    border:1px solid black;
+    height: 80px;
+    margin-top: 0px;
+    background-color: rgb(62, 69, 74);
+}
+img {
+    float: left;
+    margin-left:40px;
+    margin-top: 10px;
+    height: 60px;
+    background-color: white;
+}
+header ul {
+    float: right;
+    display: flex;
+    list-style-type:none;
+    gap:20px;
+    margin-right:40px;
+    padding: 10px;
+    font-size: medium;
+    font-family:sans-serif;
+}
+header a{
+    text-decoration: none;
+    color: rgb(161, 161, 161);   
+}
+header a:hover{
+    text-decoration:underline;
+}
+.sidebar{
+    padding-left: 25px;
+    background-color: rgb(102, 106, 108);
+    margin-top:0px;
+    margin-left:0px;
+    height: 85vh;
+    width:350px;
+}
+.sidebar ul li{
+    padding-top: 5px;
+}
+.output{
+    float: right;
+    border:1px solid black;
+    width: 100%;
+    margin-top:0px;
+    overflow: scroll;
+    height: 85vh;
+}
+.container {
+    display: flex;
+    margin-top: 10px;
+}
+.output header {
+  height: fit-content;
+  text-align: center;
+  padding-top: -10px;
+  background-color: pink;
+  border: 0px;
+}
+.output .header h1, h4 {
+  margin-top: -5px;
+  font-family:Georgia, sans-serif;
+}
+.output .header h1 {
+  color: blue;
+}
+.output hr {
+  border-top: 3px solid blue;
+  width: 80%;
+}
+.output div {
+  height: 200px;
+  
+}
+.output .parent {
+  height: fit-content;
+}
+.output h3 {
+  position:relative;
+  margin-left:400px;
+  color: blue;
+  font-family:Georgia, sans-serif;
+}
+.output .child3 {
+  height: fit-content;
+}
+.output .child2 {
+  height: fit-content; 
+}
+.output table {
+  text-align: center;
+  border:3px solid black;
+  color: white;
+  background-color: gray;
+  margin-left:400px;
+  font-family: Georgia, sans-serif;
+}
+.output td, th, tr {
+  border:2px solid black;
+}
+.output ul {
+  position:relative;
+  margin-left:400px;
+  font-family: Georgia, sans-serif;
+}
+.output {
+  background-color: pink;
+}
+.output .child4 li{
+    margin-top:10px;
+}
+.output .child4 {
+  margin-bottom: 50px;
+}
+video {
+ 
+ height: 300px;
+ padding-bottom: 30px;
+ margin-left:400px;
+ 
+}
+</style>
+</head>
+<body>
+    
+        <header>
+            <img src="logo.png" alt="">
+             <ul>
+                 <li><a href="home.html" target="_top">Home</a></li>
+                 <li><a href="HTML.html" target="_top">Html</a></li>
+                 <li><a href="CSS.html" target="_top">Css</a></li>
+                 <li><a href="#">Jquery</a></li>
+                 <li><a href="#">Javascript</a></li>
+                 <li><a href="#">Bootstrap</a></li>
+                 <li><a href="#">MiniProject</a></li>
+                 <li><a href="#">SQL</a></li>
+             </ul>
+         </header>
+        <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>Day1
+                    <ul>
+                        <li>Assignment
+                            <ul>
+                                <li><a href="">Assignment 1</li></a>
+                                <li><a href="">Assignment 2</li></a>
+                                <li><a href="">Assignment 3</li></a>
+                            </ul>
+                        </li>
+                        <li>Practice
+                            <ul>
+                                <li><a href="">Practice 1</li></a>
+                                <li><a href="">Practice 2</li></a>
+                                <li><a href="">Practice 3</li></a>
+                                <li><a href="">Practice 4</li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Day2
+                    <ul>
+                        <li>Assignment
+                            <ul>
+                                <li><a href="">Assignment 1</li></a>
+                                <li><a href="">Assignment 2</li></a>
+                            </ul>
+                        </li>
+                        <li>Practice
+                            <ul>
+                              <li><a href="">Practice 1</li></a>
+                              <li><a href="">Practice 2</li></a>
+                              <li><a href="">Practice 3</li></a>
+                              <li><a href="">Practice 4</li></a>
+                              <li><a href="">Practice 5</li></a>
+                              <li><a href="">Practice 6</li></a>
+                              <li><a href="">Practice 7</li></a>
+                              <li><a href="">Practice 8</li></a>
+                          </ul>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Day3
+                    <ul>
+                        <li>Assignment
+                            <ul>
+                                <li><a href="">Assignment 1</li></a>
+                                <li><a href="">Assignment 2</li></a>
+                                <li><a href="">Assignment 3</li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="output">
+            <header class="header">
+                <h1>Prathmesh Vyas</h1>
+                <h4>Maninagar , Ahmedabad 9726276570, 9265572750</h4>
+                <h4>prathmeshvyas2002@gmail.com</h4>
+              </header>
+          
+              <div class="parent">
+                <div class="child1">
+                  <h3>Education details</h3>
+                  <hr>
+                  <table>
+                    <caption><strong style="color: black;">Details of student</strong></caption>
+                    <tr>
+                      <th>Course</th>
+                      <th>Specification</th>
+                      <th>University</th>
+                      <th>Year of Passing</th>
+                      <th>CGPA</th>
+                    </tr>
+                    <tr>
+                      <td>Bachelor of Engineering</td>
+                      <td>Computer Engineering</td>
+                      <td>GTU</td>
+                      <td>2023</td>
+                      <td>8.0</td>
+                    </tr>
+                    <tr>
+                      <td>Diploma in Engineering</td>
+                      <td>Computer Engineering</td>
+                      <td>GTU</td>
+                      <td>2020</td>
+                      <td>7.6</td>
+                    </tr>
+                    <tr>
+                      <td>SSC</td>
+                      <td>Class X</td>
+                      <td>GSEB</td>
+                      <td>2017</td>
+                      <td>60 %</td>
+                    </tr>
+                  </table>
+                </div>
+          
+                <div class="child2">
+                  <h3>Technical skills</h3>
+                  <hr />
+                  <ul>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Django Framework</li>
+                    <li>SQL</li>
+                  </ul>
+                  <ul>
+                    <li>
+                      Also Familier with
+                      <ol style="list-style-type: lower-alpha">
+                        <li>C</li>
+                        <li>C++</li>
+                      </ol>
+                    </li>
+                  </ul>
+                </div>
+          
+                <div class="child3">
+                  <h3>Knowledge</h3>
+                  <hr>
+          
+                  <ul>
+                    <li>I have knowledge of Python Django Framework</li>
+                  </ul>
+                </div>
+                <div class="child4">
+                  <h3>Personal Deatils</h3>
+                  <hr>
+          
+                  <ul>
+                    <li>Name:Prathmesh Vyas</li>
+                    <li>Contact No: 9726276570</li>
+                    <li>Date of birth: 25/04/2002</li>
+                    <li>Email id: prathmeshvyas2002@gmail.com</li>
+                    <li>Gender: Male</li>
+                    <li>Address: Ahmedabad, Gujarat.</li>
+                  </ul>
+                </div>
+                <div class="child5">
+                    <h3>project video</h3>
+                    <hr>
+                    <video controls>
+                      <source src="pv.mp4" type="video/mp4">
+                    </video>
+                  </div>
+              </div>
+        </div>
+</div>
+</body>
+</html>

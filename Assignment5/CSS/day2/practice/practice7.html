@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 7</title>
+    <style>
+    header {
+    border:1px solid black;
+    height: 80px;
+    margin-top: 0px;
+    background-color: rgb(62, 69, 74);
+}
+img {
+    float: left;
+    margin-left:40px;
+    margin-top: 10px;
+    height: 60px;
+    background-color: white;
+}
+header ul {
+    float: right;
+    display: flex;
+    list-style-type:none;
+    gap:20px;
+    margin-right:40px;
+    padding: 10px;
+    font-size: medium;
+    font-family:sans-serif;
+}
+header a{
+    text-decoration: none;
+    color: rgb(161, 161, 161);   
+}
+header a:hover{
+    text-decoration:underline;
+}
+.sidebar{
+    padding-left: 25px;
+    background-color: rgb(102, 106, 108);
+    margin-top:0px;
+    margin-left:0px;
+    height: 85vh;
+    width:350px;
+}
+.sidebar ul li{
+    padding-top: 5px;
+}
+.output{
+    float: right;
+    border:1px solid black;
+    width: 100%;
+    margin-top:0px;
+}
+.container {
+    display: flex;
+    margin-top: 10px;
+}
+.output  {
+        border: 2px solid blue;
+        height: fit-content;
+        width: fit-content;
+      }
+@media only screen and (max-width:500px) {
+.output {
+          border-color: red;
+        }
+      }
+</style>
+</head>
+<body>
+    <header>
+            <img src="logo.png" alt="">
+             <ul>
+                 <li><a href="" target="_top">Home</a></li>
+                 <li><a href="HTML.html" target="_top">Html</a></li>
+                 <li><a href="CSS.html" target="_top">Css</a></li>
+                 <li><a href="#">Jquery</a></li>
+                 <li><a href="#">Javascript</a></li>
+                 <li><a href="#">Bootstrap</a></li>
+                 <li><a href="#">MiniProject</a></li>
+                 <li><a href="#">SQL</a></li>
+             </ul>
+         </header>
+        <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>Day1
+                    <ul>
+                        <li>Assignment
+                            <ul>
+                                <li><a href="">Assignment 1</li></a>
+                                <li><a href="">Assignment 2</li></a>
+                                <li><a href="">Assignment 3</li></a>
+                            </ul>
+                        </li>
+                        <li>Practice
+                            <ul>
+                                <li><a href="">Practice 1</li></a>
+                                <li><a href="">Practice 2</li></a>
+                                <li><a href="">Practice 3</li></a>
+                                <li><a href="">Practice 4</li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Day2
+                    <ul>
+                        <li>Assignment
+                            <ul>
+                                <li><a href="">Assignment 1</li></a>
+                                <li><a href="">Assignment 2</li></a>
+                            </ul>
+                        </li>
+                        <li>Practice
+                            <ul>
+                              <li><a href="https://www.w3schools.com/css/exercise.asp?filename=exercise_boxmodel1">Practice 1</li></a>
+                              <li><a href="https://www.w3schools.com/css/exercise.asp?filename=exercise_boxmodel2">Practice 2</li></a>
+                              <li><a href="https://www.w3schools.com/css/exercise.asp?filename=exercise_boxmodel3">Practice 3</li></a>
+                              <li><a href="https://www.w3schools.com/css/exercise.asp?filename=exercise_boxmodel4">Practice 4</li></a>
+                              <li><a href="">Practice 5</li></a>
+                              <li><a href="">Practice 6</li></a>
+                              <li><a href="">Practice 7</li></a>
+                              <li><a href="">Practice 8</li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Day3
+                    <ul>
+                        <li>Assignment
+                            <ul>
+                                <li><a href="">Assignment 1</li></a>
+                                <li><a href="">Assignment 2</li></a>
+                                <li><a href="">Assignment 3</li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="output">
+            <h1>What is media queries</h1>
+            <p>
+              Media queries were first sketched in Håkon Wium Lie's initial CSS proposal in 1994,
+              but they did not become part of CSS 1. The HTML4 Recommendation from 1997 shows an example of how media queries could be added in the future.In 2000, W3C started work on media queries and also on another scheme for supporting various devices: CC/PP. The two address the same problem, but CC/PP is server-centric, while media queries are browser-centric.[4] The first public working draft for media queries was published in 2001,
+              and the specification became a W3C Recommendation in 2012 after browsers added support.
+            </p>
+        </div>
+</div>
+</body>
+</html>

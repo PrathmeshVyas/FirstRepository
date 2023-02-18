@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart</title>
+</head>
+<style>
+        header {
+            display:flex;
+            height: 40px;
+            width: 100%;
+            margin:0%;
+            background-color: rgb(212, 221, 226);
+        }
+        .cart img {
+            padding-right: 5px;
+            height: 25px;
+            width: 25px;
+        }
+        .cart {
+            float: left;
+            color: rgb(83, 79, 79);
+            text-decoration: none;
+        }
+        #i1 {
+            margin-left:240px;
+            height:25px;
+            width:25px;
+        }
+        a {
+            float: right;
+            padding-top: 10px;
+            display: flex;
+            color:rgb(83, 79, 79);
+        }
+        .navbar {
+            height:150px;
+            width: 100%;
+        }
+        .logo {
+            margin-top:10px;
+        }
+        .num {
+            float: right;
+            font-size: xx-large;
+            color: rgb(83, 79, 79);
+        }
+        .menu{
+            display: flex;
+            flex-wrap: wrap;
+            gap:10px;
+        }
+        .menu li {
+            list-style-type: none;
+            color: rgb(83, 79, 79);
+            font-size: medium;
+            font-weight: bold;
+        }
+        .intro {
+            
+            height:fit-content;
+            width: 100%;
+            padding-top: 25px;
+            background-color: rgb(212, 221, 226);
+            color: rgb(83, 79, 79);
+        }
+        p {
+            width:fit-content;
+            flex-wrap: wrap;
+            text-align: justify;
+            
+        }
+        h1, h2 {
+            margin-left:0px;
+        }
+        form {
+            padding:10px;
+        }
+        input {
+            margin: 10px;
+            border:1px solid;
+            height: 30px;
+            border-radius:5px;
+        }
+        #message {
+            width: 385px;
+            height: 40px;
+            padding: 0%;
+        }
+        #submit {
+            width: 390px;
+            height: 30px;
+            background-color: orange;
+            font-size: large;
+            border: none;
+        }
+        #gs {
+            margin-left: 140px;
+            height:30px;
+            width: 200px;
+            background-color: orange;
+            font-size: medium;
+            border-radius: 10px;
+            border: none;
+        }
+        .intro2 {
+            color: white;
+            height:fit-content;
+            background-color:rgba(100, 147, 240, 0.925);
+            font-family: serif;
+            margin-top: -17px;
+        }
+        .title2 {
+            padding: 10px;
+        }
+        .p2 {
+            margin-top: 10px;
+            text-align: justify;
+            flex-wrap:wrap;
+            width: fit-content;
+        }
+        .b2 {
+            height: 30px;
+            width: 150px;
+            color: blueviolet;
+            background-color: white;
+            font-size: medium;
+            font-weight: bold;
+            border: none;
+            margin-left: 155px;
+            margin-bottom: 3px;
+        }
+        .intro3 {
+            height: fit-content;
+            padding: 30px;
+            background-color: rgb(212, 221, 226);
+        }
+        .print{
+            width:400px;
+
+        }
+        .subintro3 { 
+            width: fit-content;
+            height: fit-content;
+            color: rgb(83, 79, 79);
+        }
+        #b3 {
+            height: 40px;
+            width: 200px;
+            margin-left:115px;
+            color: white;
+            background-color: orange;
+            font-size: medium;
+            font-weight: bold;
+            border: none;
+        }
+        .flexcontainer{
+            padding-top: 20px;
+            padding-left: 80px;
+            display: flex;
+            flex-wrap: wrap;
+            height:fit-content  ;
+            width:100%;
+
+        }
+        .child {
+            display: flex;
+            flex-wrap: wrap;
+            height:400px;
+            width:300px;
+            padding: 10px;
+            color: rgb(83, 79, 79);
+        }
+        .proimage {
+            height:200px;
+            width: 300px;
+        }
+        .prop {
+            margin-left:10px;
+            padding-right: 10px;
+            margin-top: 0%;
+        }
+        .prop1 {
+            margin-left:10px;
+            padding-right: 10px;
+            margin-top: -20px;
+        }
+        #b4 {
+            height: 40px;
+            width: 200px;
+            margin-left:70px;
+            color: white;
+            background-color: orange;
+            font-size: medium;
+            font-weight: bold;
+            border: none;
+            margin-top:-20px;
+        }
+        #c1 {
+            margin-left:0px;
+        }
+        .intro4 {
+            margin-top: 10px;
+            padding-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgb(9, 165, 155);
+        }
+        .intro4 li {
+            list-style-type: none;
+            color: white;
+            font-size: small;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .li4 {
+            font-size: large;
+        }
+        footer {
+            padding: 15px;
+            text-align: center;
+            background-color: rgb(9, 165, 155);
+            opacity: 70%;
+        }
+        footer label {
+            font-weight: lighter;
+            font-size: smaller;
+            height: min-content;
+        }
+        @media screen and (min-width:1600px){
+        header {
+
+            height: 40px;
+            width: 100%;
+            margin:0%;
+            background-color: rgb(212, 221, 226);
+            
+        }
+        .signin {
+            margin-right:200px;
+        }
+        #i1 {
+            margin-left: 1200px;
+            height:25px;
+            width:25px;
+        
+        }
+        a {
+            float: right;
+            padding-top: 10px;
+            display: flex;
+            color:rgb(83, 79, 79);
+        }
+        .cart img {
+            float: left;
+            height: 25px;
+            width: 25px;
+        }
+        .cart {
+
+            margin-left: 170px;
+            color: rgb(83, 79, 79);
+            text-decoration: none;
+            
+        }
+
+        .navbar {
+            height:150px;
+            width: 100%;
+        }
+        .logo {
+            margin-left: 200px;
+            margin-top:10px;
+        }
+        .num {
+            float: right;
+            margin-right: 200px;
+            font-size: xx-large;
+            color: rgb(83, 79, 79);
+        }
+        .menu{
+            display:flex;
+            gap:120px;
+            margin-left: 120px;
+        }
+        .menu li {
+            list-style-type: none;
+            color: rgb(83, 79, 79);
+            font-size: large;
+            font-weight: bold;
+        }
+        .intro {
+            
+            height: 370px;
+            width: 100%;
+            padding-top: 50px;
+            background-color: rgb(212, 221, 226);
+            color: rgb(83, 79, 79);
+        }
+        p {
+            margin-left: 200px;
+            width:500px;
+            text-align: justify;
+            
+        }
+        h1, h2 {
+            margin-left: 200px;
+        }
+        form {
+            margin-top:-250px;
+            bottom: 200px;
+            float: right;
+            margin-right: 100px;
+        }
+        input {
+            margin: 10px;
+            border:1px solid;
+            height: 30px;
+            border-radius:5px;
+        }
+        #message {
+            width: 385px;
+            height: 80px;
+            padding: 0%;
+        }
+        #submit {
+            width: 390px;
+            height: 30px;
+            background-color: orange;
+            font-size: large;
+            border: none;
+        }
+        #gs {
+            height:30px;
+            margin-left: 200px;
+            width: 200px;
+            background-color: orange;
+            font-size: medium;
+            border-radius: 10px;
+            border: none;
+            
+        }
+        .intro2 {
+
+            color: white;
+            height:200px;
+            background-color:rgba(100, 147, 240, 0.925);
+            font-family: serif;
+            margin-top: -17px;
+        }
+        .title2 {
+            padding-top: 10px;
+        }
+        .p2 {
+            text-align: unset;
+            width: 800px;
+        }
+        .b2 {
+            height: 40px;
+            width: 200px;
+            margin-top:-90px;
+            margin-right:150px;
+            float: right;   
+            color: blueviolet;
+            background-color: white;
+            font-size: medium;
+            font-weight: bold;
+            border: none;
+        }
+        .intro3 {
+            width:96.5%;
+            margin-top:0px;           
+            display: flex;
+            height: 250px;
+            padding: 30px;
+            background-color: rgb(212, 221, 226);
+        }
+        .print{
+            margin-left:160px;
+        }
+        .subintro3 {
+            margin-left:300px;   
+            width: fit-content;
+            height: fit-content;
+            color: rgb(83, 79, 79);
+            
+        }
+        #b3 {
+            height: 40px;
+            width: 200px;
+            margin-left:200px;
+            color: white;
+            background-color: orange;
+            font-size: medium;
+            font-weight: bold;
+            border: none;
+        }
+        .flexcontainer{
+            padding: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            height:fit-content  ;
+            width: 96.5%;
+            gap:20px;
+
+        }
+        .child {
+            display: flex;
+            flex-wrap: wrap;
+            height:400px;
+            width:300px;
+            padding: 10px;
+            color: rgb(83, 79, 79);
+        }
+        .proimage {
+            height:200px;
+            width: 300px;
+        }
+        .prop {
+            margin-left:10px;
+            padding-right: 10px;
+            margin-top: 0%;
+        }
+        .prop1 {
+            margin-left:10px;
+            padding-right: 10px;
+            margin-top: -20px;
+        }
+        #b4 {
+            height: 40px;
+            width: 200px;
+            margin-left:750px;
+            color: white;
+            background-color: orange;
+            font-size: medium;
+            font-weight: bold;
+            border: none;
+            margin-top:-20px;
+        }
+        #c1 {
+            margin-left: 360px;
+        }
+        .intro4 {
+            padding-top: 20px;
+            display: flex;
+            padding-left: 320px;
+            gap: 50px;
+            background-color: rgb(9, 165, 155);
+        }
+        .intro4 li {
+            list-style-type: none;
+            color: white;
+            font-size: small;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .li4 {
+            font-size: large;
+        }
+        footer {
+            padding: 15px;
+            text-align: center;
+            background-color: rgb(9, 165, 155);
+            opacity: 70%;
+        }
+        footer label {
+            font-weight: lighter;
+            font-size: smaller;
+            height: min-content;
+        }
+        }
+        
+</style>
+<body>
+    <header>
+        <a href="#" class="cart"><img src="https://cdn-icons-png.flaticon.com/128/3144/3144456.png" alt="">Shopping Cart</a>
+        
+        
+        <a href="#"><img id="i1" src="https://cdn-icons-png.flaticon.com/128/456/456212.png" alt="">register/</a>
+        <a href="#" class="signin">Signin</a>
+    </header>
+    <div class="navbar">
+        <img class="logo" src="https://apitutorial.dev.radixweb.net:443/public/uploads/files1676030625964-logo.png" alt="">
+        <h1 class="num">512-219-8000</h1>
+        <ul class="menu">
+            <li>Yard Signs</li>
+            <li>Banners</li>
+            <li>Accesories</li>
+            <li>Gallery</li>
+            <li>About</li>
+            <li>Price</li>
+            <li>Material</li>
+            <li>FAQ</li>
+            <li>Custom Quote</li>
+        </ul>
+    </div>
+    <div class="intro">
+        <h1 class="title">The Shopping cart</h1>
+        <h2 class="subtitle">smaller sub header</h2>
+        <p>Online printing services make it easy for anyone to order any type of printed product, 
+            from personal wallet pictures and canvas wall art to business cards and wedding invitations, 
+            all from the convenience of their phone or laptop
+            Aside from convenience, online printing services can turn anyone into a professional artist. 
+            Almost all providers offer pre-made templates with artistic combinations of text, images, and layout. 
+              
+        </p>
+        <button type="button" id="gs">Get started</button>
+        <form action="">
+            <input type="text" name="text" placeholder="firstname :">
+            <input type="text" name="text" placeholder="lastname :"><br>
+            <input type="text" name="text" placeholder="email :">
+            <input type="text" name="text" placeholder="mobile number :"><br>
+            <input type="text" name="message" id="message" placeholder="message"><br>
+            <input type="submit" value="SEND" id="submit">
+        </form>
+    </div>
+    <div class="intro2">
+        <h2 class="title2">This is where An Awesome Title Goes</h2>
+        <p class="p2">Online printing services make it easy for anyone to order any type of printed product, 
+            from personal wallet pictures and canvas wall art to business cards and wedding invitations, all from the convenience of their phone or laptop
+            Aside from convenience, online printing services can turn anyone into a professional artist.  Almost all providers offer pre-made templates with artistic combinations of text, images, and layout. 
+              
+        </p>
+        <button type="button" class="b2">Design it now</button>
+    </div>
+    <div class="intro3">
+        <img src="https://apitutorial.dev.radixweb.net:443/public/uploads/files1676030611766-img.jpg"  class="print" alt="">
+        <div class="subintro3">
+            <h1 class="h13">Watch This</h1>
+            <h2 class="h23">it's a video yo!</h2>
+            <p class="p3">Online printing services make it easy for anyone to order any type of printed product, 
+                from personal wallet pictures and canvas wall art to business cards and wedding invitations, 
+                all from the convenience of their phone or laptop</p>
+            <button type="button" id="b3">Learn More</button>
+        </div>
+    </div>
+    <div class="flexcontainer">
+        <div class="child" id="c1">
+            <img class="proimage" src="https://media.istockphoto.com/id/1329881430/photo/shot-of-a-notebook-and-pen-on-a-desk-in-an-office.jpg?b=1&s=170667a&w=0&k=20&c=5E_bUtKPCfKHQWCv2uVxtU-pTFFwsGImvetVwXqG_R4=" alt="">
+            <h2 class="prop">Project 1</h2>
+            <p class="prop1">Online printing services make it easy for 
+                anyone to order any type of printed product, 
+                from personal wallet pictures and canvas wall 
+                art to business cards and wedding invitations.</p>
+        </div>
+        <div class="child">
+            <img class="proimage" src="https://media.istockphoto.com/id/1424808451/photo/2023-new-year-goal-plan-action-concepts-with-text-on-notepad-and-office-accessories-business.jpg?b=1&s=170667a&w=0&k=20&c=86UGq7vK72a_RRsVX7A2zibnVPWtcLTNzLaqWiE3ufY=" alt="">
+            <h2 class="prop">Project 2</h2>
+            <p class="prop1">Online printing services make it easy for 
+                anyone to order any type of printed product, 
+                from personal wallet pictures and canvas wall 
+                art to business cards and wedding invitations.</p>
+        </div>
+        <div class="child">
+            <img class="proimage" src="https://media.istockphoto.com/id/1410323324/photo/business-documents-businessman-check-legal-document-review-prepare-documents-or-analysis.jpg?b=1&s=170667a&w=0&k=20&c=P0cKsXIPanyU2KffNbQjBJrQBAX_wyh2t3p2z_3UXR0=" alt="">
+            <h2 class="prop">Project 3</h2>
+            <p class="prop1">Online printing services make it easy for 
+                anyone to order any type of printed product, 
+                from personal wallet pictures and canvas wall 
+                art to business cards and wedding invitations.</p>
+        </div>
+        <button type="button" id="b4">Learn More</button>
+    </div>
+    <div class="intro4">
+        <ul>
+            <li><strong class="li4">Help</strong></li>
+            <li>Contact us</li>
+            <li>FAQ</li>
+            <li>Sitemap</li>
+            <li>Pricing</li>
+            <li>Redeem Promo</li>
+            <br>
+            <li><strong class="li4">Account</strong></li>
+            <li>My account</li>
+        </ul>
+        <ul>
+            <li><strong class="li4">Products</strong></li>
+            <li>Yard Signs</li>
+            <li>Real Estate Signs</li>
+            <li>Vinly Banners</li>
+            <li>Car Magnetics</li>
+            <li>Redeem Promo</li>
+            <li>Banner Stands</li>
+            <li>Accesories</li>
+            <li>Design Services</li>
+        </ul>
+        <ul>
+            <li><strong class="li4">Company</strong></li>
+            <li>Overview</li>
+            <li>Press Room</li>
+            <li>Careers</li>
+            <li>Reviews</li>
+            <br>
+            <li><strong class="li4">Programs</strong></li>
+            <li>Affiliate</li>
+        </ul>
+        <ul>
+            <li><strong class="li4">Help</strong></li>
+            <li>Contact us</li>
+            <li>FAQ</li>
+            <li>Sitemap</li>
+            <li>Pricing</li>
+            <li>Redeem Promo</li>
+            <br>
+            <li><strong class="li4">Account</strong></li>
+            <li>My account</li>
+        </ul>
+        <ul>
+
+            <li><strong class="li4">Products</strong></li>
+            <li>Yard Signs</li>
+            <li>Real Estate Signs</li>
+            <li>Vinly Banners</li>
+            <li>Car Magnetics</li>
+            <li>Redeem Promo</li>
+            <li>Banner Stands</li>
+            <li>Accesories</li>
+            <li>Design Services</li>
+        </ul>
+        <ul>
+            <li><strong class="li4">Company</strong></li>
+            <li>Overview</li>
+            <li>Press Room</li>
+            <li>Careers</li>
+            <li>Reviews</li>
+            <br>
+            <li><strong class="li4">Programs</strong></li>
+            <li>Affiliate</li>
+        </ul>
+    </div>
+    <footer>
+        <label>Copyright &#169 2016 SignDepoATX.com</label>
+    </footer>
+</body>
+</html>

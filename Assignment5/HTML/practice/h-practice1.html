@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 1</title>
+    <style>
+    header {
+    border:1px solid black;
+    height: 80px;
+    margin-top: 0px;
+    background-color: rgb(62, 69, 74);
+}
+img {
+    float: left;
+    margin-left:40px;
+    margin-top: 10px;
+    height: 60px;
+    background-color: white;
+}
+header ul {
+    float: right;
+    display: flex;
+    list-style-type:none;
+    gap:20px;
+    margin-right:40px;
+    padding: 10px;
+    font-size: medium;
+    font-family:sans-serif;
+}
+header a{
+    text-decoration: none;
+    color: rgb(161, 161, 161);   
+}
+header a:hover{
+    text-decoration:underline;
+}
+.sidebar{
+    padding-left: 25px;
+    background-color: rgb(102, 106, 108);
+    margin-top:0px;
+    margin-left:0px;
+    height: 85vh;
+    width:350px;
+}
+.sidebar ul li{
+    padding-top: 5px;
+}
+.output{
+    float: right;
+    border:1px solid black;
+    width: 100%;
+    margin-top:0px;
+}
+.container {
+    display: flex;
+    margin-top: 10px;
+}
+    </style>
+</head>
+<body>
+    
+        <header>
+            <img src="logo.png" alt="">
+             <ul>
+                 <li><a href="home.html" target="_top">Home</a></li>
+                 <li><a href="HTML.html" target="_top">Html</a></li>
+                 <li><a href="CSS.html" target="_top">Css</a></li>
+                 <li><a href="#">Jquery</a></li>
+                 <li><a href="#">Javascript</a></li>
+                 <li><a href="#">Bootstrap</a></li>
+                 <li><a href="#">MiniProject</a></li>
+                 <li><a href="#">SQL</a></li>
+             </ul>
+         </header>
+        <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>Day3
+                    <ul>
+                        <li>Assignment
+                            <ul>
+                                <li><a href="h-assignment1.html" target="form">Assignment 1</a></li>
+                                <li><a href="h-assignment2.html" >Assignment 2</a></li>
+                            </ul>
+                        </li>
+                        <li>Practice
+                            <ul>
+                                <li><a href="" target="form">Practice 1</a></li>
+                                <li><a href="h-practice2.html" target="form">Practice 2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="output">
+            <h1 class="rectangle">CEO</h1>
+            <ol>
+                <li><h4>HR Department<h4></li>
+                <ul><li>VP of HR</li>
+                <ol>
+                    <li>HR Director
+                        <ul><li>HR Manager
+                            <ol style="list-style-type:lower-roman;">
+                                <li>HR Manager
+                                    <ol style="list-style-type:lower-alpha;">
+                                        <li>HR Generalist</li>
+                                        <li>HR Specialist</li>
+                                    </ol>
+                                </li>
+                                <li>Payroll Specialist</li>
+                                <li>Compensation Benefit manager</li>
+                            </ol>
+                        </li></ul>
+                    </li>
+  
+                    <li>Recruiting Director
+                        <ul>
+                            <li>Recruiter
+                                <ol style="list-style-type: lower-roman;">
+                                    <li>Recruiting Coordinator</li>
+                                    <li>Candidate Researcher</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </li>
+                </ol></ul>
+                <li><h4>Sales and Executive<h4></li>
+                <ul><li>Sales Director</li>
+                <ol><li>Sales Manager
+                    <ul><li>Account Executive</li>
+                        <li>Sales Engineer</li></ul>
+                </li>
+                    <li>Sales OPS Manager
+                        <ul><li>Sales Ops Analyst</li>
+                            <li>Sales Enablement Manager</li></ul>
+                    </li></ol></ul>
+                <li><h4>Production<h4></li>
+                <ul><li>Project Manager</li>
+                <ol><li>FrontEnd Department</li>
+                    <li>BackEnd Department</li>
+                    <li>QA Department</li></ol></ul>
+                <li><h4>Finance Department<h4></h4></li>
+                <ul><li>Cheif Finance Officer
+                    <ol><li>Management Accounting</li>
+                    <li>Financial Accounting</li></ol>
+                </li></ul>
+            </ol>
+        </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 4</title>
+    <style>
+    header {
+    border:1px solid black;
+    height: 80px;
+    margin-top: 0px;
+    background-color: rgb(62, 69, 74);
+}
+img {
+    float: left;
+    margin-left:40px;
+    margin-top: 10px;
+    height: 60px;
+    background-color: white;
+}
+header ul {
+    float: right;
+    display: flex;
+    list-style-type:none;
+    gap:20px;
+    margin-right:40px;
+    padding: 10px;
+    font-size: medium;
+    font-family:sans-serif;
+}
+header a{
+    text-decoration: none;
+    color: rgb(161, 161, 161);   
+}
+header a:hover{
+    text-decoration:underline;
+}
+.sidebar{
+    padding-left: 25px;
+    background-color: rgb(102, 106, 108);
+    margin-top:0px;
+    margin-left:0px;
+    height: 85vh;
+    width:350px;
+}
+.sidebar ul li{
+    padding-top: 5px;
+}
+.output{
+    float: right;
+    border:1px solid black;
+    width: 100%;
+    margin-top:0px;
+}
+.container {
+    display: flex;
+    margin-top: 10px;
+}
+.output .parent {
+      border: 3px solid black;
+      height: 200px;
+      position: static;
+      top: 50px;
+    }
+
+    .output .child3 {
+      border: 5px solid green;
+      position: absolute;
+      right: 50px;
+    }
+
+    .output .child1 {
+      border: 5px solid red;
+      position: fixed;
+      top: 250px;
+    }
+
+    .output .child2 {
+      border: 5px solid blue;
+      position: relative;
+      top: 50px;
+    }
+
+    .output .div2 {
+      border: 3px solid black;
+      
+      margin-top: 20px;
+      overflow:scroll;
+      height:100px;
+    }
+</style>
+</head>
+<body>
+    <header>
+            <img src="logo.png" alt="">
+             <ul>
+                 <li><a href="" target="_top">Home</a></li>
+                 <li><a href="HTML.html" target="_top">Html</a></li>
+                 <li><a href="CSS.html" target="_top">Css</a></li>
+                 <li><a href="#">Jquery</a></li>
+                 <li><a href="#">Javascript</a></li>
+                 <li><a href="#">Bootstrap</a></li>
+                 <li><a href="#">MiniProject</a></li>
+                 <li><a href="#">SQL</a></li>
+             </ul>
+         </header>
+        <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>Day1
+                    <ul>
+                        <li>Assignment
+                            <ul>
+                                <li><a href="">Assignment 1</li></a>
+                                <li><a href="">Assignment 2</li></a>
+                                <li><a href="">Assignment 3</li></a>
+                            </ul>
+                        </li>
+                        <li>Practice
+                            <ul>
+                                <li><a href="">Practice 1</li></a>
+                                <li><a href="">Practice 2</li></a>
+                                <li><a href="">Practice 3</li></a>
+                                <li><a href="">Practice 4</li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Day2
+                    <ul>
+                        <li>Assignment
+                            <ul>
+                                <li><a href="">Assignment 1</li></a>
+                                <li><a href="">Assignment 2</li></a>
+                            </ul>
+                        </li>
+                        <li>Practice
+                            <ul>
+                              <li><a href="">Practice 1</li></a>
+                              <li><a href="">Practice 2</li></a>
+                              <li><a href="">Practice 3</li></a>
+                              <li><a href="">Practice 4</li></a>
+                              <li><a href="">Practice 5</li></a>
+                              <li><a href="">Practice 6</li></a>
+                              <li><a href="">Practice 7</li></a>
+                              <li><a href="">Practice 8</li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Day3
+                    <ul>
+                        <li>Assignment
+                            <ul>
+                                <li><a href="">Assignment 1</li></a>
+                                <li><a href="">Assignment 2</li></a>
+                                <li><a href="">Assignment 3</li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="output">
+            <div class="parent">
+                parent is static
+                <div class="child1">this is fixed child</div>
+                <div class="child2">this is relative child</div>
+                <div class="child3">this is absolute child</div>
+              </div>
+              <div class="div2">
+                his text is really long and the height of its container is only 100
+                pixels. Therefore, a scrollbar is added to help the reader to scroll the
+                content. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum. Typi non habent claritatem
+                insitam; est usus legentis in iis qui facit eorum claritatem.
+                his text is really long and the height of its container is only 100
+                pixels. Therefore, a scrollbar is added to help the reader to scroll the
+                content. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum. Typi non habent claritatem
+                insitam; est usus legentis in iis qui facit eorum claritatem.
+              </div>
+        </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 6</title>
+    <style>
+    header {
+    border:1px solid black;
+    height: 80px;
+    margin-top: 0px;
+    background-color: rgb(62, 69, 74);
+}
+img {
+    float: left;
+    margin-left:40px;
+    margin-top: 10px;
+    height: 60px;
+    background-color: white;
+}
+header ul {
+    float: right;
+    display: flex;
+    list-style-type:none;
+    gap:20px;
+    margin-right:40px;
+    padding: 10px;
+    font-size: medium;
+    font-family:sans-serif;
+}
+header a{
+    text-decoration: none;
+    color: rgb(161, 161, 161);   
+}
+header a:hover{
+    text-decoration:underline;
+}
+.sidebar{
+    padding-left: 25px;
+    background-color: rgb(102, 106, 108);
+    margin-top:0px;
+    margin-left:0px;
+    height: 85vh;
+    width:350px;
+}
+.sidebar ul li{
+    padding-top: 5px;
+}
+.output{
+    float: right;
+    border:1px solid black;
+    width: 100%;
+    margin-top:0px;
+    background-color: skyblue;
+    height: 85vh;
+    overflow: scroll;
+}
+.container {
+    display: flex;
+    margin-top: 10px;
+}
+.output .parent {
+        width: fit-content;
+        height: fit-content;
+        padding: 50px;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 5px;
+        
+      }
+      .output .child1 {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .output .child1 div {
+        height: fit-content;
+        width: fit-content;
+        
+      }
+      .output .child2 {
+        flex-direction: row;
+        padding: 0px;
+      }
+
+      .output .child2 div {
+        height: fit-content;
+        width: fit-content;
+      }
+
+      .output .child2 img {
+        margin-top:20px;
+        height: 230px;
+        width: 190px;
+      }
+      .output .child3 {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .output .child3 div {
+        height: fit-content;
+        width: fit-content;
+  
+      }
+      .output .flex-item {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .output img {
+        height:250px;
+        width: 300px;
+        border-radius: 10px;
+      }
+</style>
+</head>
+<body>
+    <header>
+            <img src="logo.png" alt="">
+             <ul>
+                 <li><a href="" target="_top">Home</a></li>
+                 <li><a href="HTML.html" target="_top">Html</a></li>
+                 <li><a href="CSS.html" target="_top">Css</a></li>
+                 <li><a href="#">Jquery</a></li>
+                 <li><a href="#">Javascript</a></li>
+                 <li><a href="#">Bootstrap</a></li>
+                 <li><a href="#">MiniProject</a></li>
+                 <li><a href="#">SQL</a></li>
+             </ul>
+         </header>
+        <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>Day1
+                    <ul>
+                        <li>Assignment
+                            <ul>
+                                <li><a href="">Assignment 1</li></a>
+                                <li><a href="">Assignment 2</li></a>
+                                <li><a href="">Assignment 3</li></a>
+                            </ul>
+                        </li>
+                        <li>Practice
+                            <ul>
+                                <li><a href="">Practice 1</li></a>
+                                <li><a href="">Practice 2</li></a>
+                                <li><a href="">Practice 3</li></a>
+                                <li><a href="">Practice 4</li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Day2
+                    <ul>
+                        <li>Assignment
+                            <ul>
+                                <li><a href="">Assignment 1</li></a>
+                                <li><a href="">Assignment 2</li></a>
+                            </ul>
+                        </li>
+                        <li>Practice
+                            <ul>
+                              <li><a href="https://www.w3schools.com/css/exercise.asp?filename=exercise_boxmodel1">Practice 1</li></a>
+                              <li><a href="https://www.w3schools.com/css/exercise.asp?filename=exercise_boxmodel2">Practice 2</li></a>
+                              <li><a href="https://www.w3schools.com/css/exercise.asp?filename=exercise_boxmodel3">Practice 3</li></a>
+                              <li><a href="https://www.w3schools.com/css/exercise.asp?filename=exercise_boxmodel4">Practice 4</li></a>
+                              <li><a href="">Practice 5</li></a>
+                              <li><a href="">Practice 6</li></a>
+                              <li><a href="">Practice 7</li></a>
+                              <li><a href="">Practice 8</li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Day3
+                    <ul>
+                        <li>Assignment
+                            <ul>
+                                <li><a href="">Assignment 1</li></a>
+                                <li><a href="">Assignment 2</li></a>
+                                <li><a href="">Assignment 3</li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="output">
+            <div class="parent">
+                <div class="child1">
+                  <div><img src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg" alt="" /></div>
+                  <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcxlfh-mkoT2-n23SPzQinj44dhvgZ99i94iDNaLHxsWDLuUQeCluQT1dN_c9GjvbmwHk&usqp=CAU" alt="" /></div>
+                  <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLPyojTxWyWCiWuw4R8IFPKErFuf7DvvCw2q7YxCz2&s" alt="" /></div>
+                </div>
+                <div class="child2">
+                  <div class="flex-item">
+                    <div><img src="https://media.istockphoto.com/photos/coastline-aerial-photograph-of-aquamarine-ocean-and-man-walking-along-picture-id1299198919?b=1&k=20&m=1299198919&s=612x612&w=0&h=SUBYKdyNBjsFa_KCSztMisfQqDPLoR0d5yrKykDDYVI=" alt="" /></div>
+                    <div><img src="https://t3.ftcdn.net/jpg/02/97/07/18/360_F_297071826_W4Jv8lgKJ338d9grf68ocN3AaNjohkZ3.jpg" alt="" /></div>
+                    <div><img src="https://t4.ftcdn.net/jpg/03/58/59/53/360_F_358595317_q3HeICxjxviabOSPZUn8hbhUSTWsJp70.jpg" alt="" /></div>
+                    <div><img src="https://media.istockphoto.com/photos/tropical-beach-palm-trees-sea-wave-and-white-sand-picture-id1300296030?b=1&k=20&m=1300296030&s=612x612&w=0&h=VbByOfT1WE2OwH7ILNIDFV9Xdj-bBIVH5msMQjFTPkc=" alt="" /></div>
+                    <div><img src="https://media.istockphoto.com/photos/coastline-aerial-photograph-of-aquamarine-ocean-and-man-walking-along-picture-id1299198919?b=1&k=20&m=1299198919&s=612x612&w=0&h=SUBYKdyNBjsFa_KCSztMisfQqDPLoR0d5yrKykDDYVI=" alt="" /></div>
+                    <div><img src="https://media.istockphoto.com/photos/view-from-dune-top-over-north-sea-picture-id1302442639?b=1&k=20&m=1302442639&s=612x612&w=0&h=CQEg48h7WYdHia22nFXVCUdzUYNmCqiqlXgoRfT9VZY=" alt="" /></div>
+                    <div><img src="https://t3.ftcdn.net/jpg/02/14/52/44/240_F_214524451_LXXWMRWQ7glWwoyysjQtlwMNP1Igqnh2.jpg" alt="" /></div>
+                    <div><img src="https://t3.ftcdn.net/jpg/02/70/35/00/240_F_270350073_WO6yQAdptEnAhYKM5GuA9035wbRnVJSr.jpg" alt="" /></div>
+                    <div><img src="https://t3.ftcdn.net/jpg/02/00/04/68/360_F_200046800_YUbZhgIVR6lOwSa66UmUNmQnx7eve952.jpg" alt="" /></div>
+                </div>
+                </div>
+                <div class="child3">
+                  <div><img src="https://t4.ftcdn.net/jpg/03/57/85/41/360_F_357854155_pZ7ueCQaQ8lBl1ePCaaQ5rRUfKctxr7d.jpg" alt="" /></div>
+                  <div><img src="https://t3.ftcdn.net/jpg/02/69/87/04/360_F_269870413_IdnpSWcfCQO7kciAgPZ3y4g38rQLWpHf.jpg" alt="" /></div>
+                  <div><img src="https://t3.ftcdn.net/jpg/02/81/10/56/360_F_281105605_kQDmguOWgmvCYOWHQXhlEquungy75srg.jpg" alt="" /></div>
+                </div>
+              </div>
+        </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment 1</title>
+    <style>
+    header {
+    border:1px solid black;
+    height: 80px;
+    margin-top: 0px;
+    background-color: rgb(62, 69, 74);
+}
+img {
+    float: left;
+    margin-left:40px;
+    margin-top: 10px;
+    height: 60px;
+    background-color: white;
+}
+header ul {
+    float: right;
+    display: flex;
+    list-style-type:none;
+    gap:20px;
+    margin-right:40px;
+    padding: 10px;
+    font-size: medium;
+    font-family:sans-serif;
+}
+header a{
+    text-decoration: none;
+    color: rgb(161, 161, 161);   
+}
+header a:hover{
+    text-decoration:underline;
+}
+.sidebar{
+    padding-left: 25px;
+    background-color: rgb(102, 106, 108);
+    margin-top:0px;
+    margin-left:0px;
+    height: 85vh;
+    width:350px;
+}
+.sidebar ul li{
+    padding-top: 5px;
+}
+.output {
+    float: right;
+    border:1px solid black;
+    width: 100%;
+    margin-top:0px;
+    height: 85vh;
+}
+.container {
+    display: flex;
+    margin-top: 10px;
+}
+output {
+        background-color:antiquewhite;
+    }   
+    .output .parent {
+        
+        height: fit-content;
+        display:flex;
+        flex-wrap: wrap;
+        background-color:antiquewhite;
+        padding: 10px;
+        
+    }
+    .output a{
+        margin-left: 150px;
+        margin-top: 10px;
+        color: darkcyan;
+    }
+    .output strong {
+        color: darkcyan;
+    }
+
+    .output .card {
+        height: fit-content;
+        border-radius: 15px;
+        width: 400px;
+        margin:10px;
+        background-color: white;
+        padding: 5px;
+    }
+
+    .output .dp {
+        height:70px;
+        width:70px;
+        border:1px solid black;
+        border-radius:40px;
+        margin-top:10px;
+        margin-left:10px;
+    }
+    .output .logo {
+        height:50px;
+        width:50px;
+        border:1px solid black;
+        border-radius:10px;
+        float: right;
+        margin-right: 10px;
+        margin-top:20px;
+    }
+    .output .student {
+        float: right;
+        margin-right:10px;
+    }
+    .output .college {
+        float: left;
+        padding-left: 0%;
+    }
+
+    .output li {
+        list-style-type: none;
+        margin:10px;
+    }
+    @media screen and (min-width:757px) and (max-width:1000px){  
+    .output .parent {
+        
+        height: fit-content;
+        display:flex;
+        flex-wrap: wrap;
+        background-color:antiquewhite;
+        padding: 5px;
+        
+    }
+    .output a{
+        margin-left: 150px;
+        margin-top: 10px;
+        color: darkcyan;
+    }
+    .output strong {
+        color: darkcyan;
+    }
+    .output .card {
+        height: fit-content;
+        border-radius: 15px;
+        width: 350px;
+        margin:5px;
+        background-color: white;
+        padding: 3px;
+    }
+    @media screen and (min-width:500px){
+    .output .card {
+        height: fit-content;
+        border-radius: 15px;
+        width: 300px;
+        margin:5px;
+        background-color: white;
+        padding: 2px;
+    }
+    .output .dp {
+        height:70px;
+        width:70px;
+        border:1px solid black;
+        border-radius:40px;
+        margin-top:10px;
+        margin-left:10px;
+    }
+    .output .logo {
+        height:50px;
+        width:50px;
+        border:1px solid black;
+        border-radius:10px;
+        float: right;
+        margin-right: 10px;
+        margin-top:20px;
+    }
+    .output .student {
+        float: right;
+        margin-right:1px;
+    }
+    .output .college {
+        float: left;
+        padding-left: 0%;
+    }
+
+    .output li {
+        list-style-type: none;
+        margin:5px;
+    }  
+    }
+    }
+    @media screen and (min-width:1000px) and (max-width:1321px){
+    .output .parent {
+        
+        height: fit-content;
+        display:flex;
+        flex-wrap: wrap;
+        background-color:antiquewhite;
+        padding: 5px;
+        
+    }
+    .output a{
+        margin-left: 150px;
+        margin-top: 10px;
+        color: darkcyan;
+    }
+    .output strong {
+        color: darkcyan;
+    }
+
+    .output .card {
+        height: fit-content;
+        border-radius: 15px;
+        width: 300px;
+        margin:5px;
+        background-color: white;
+        padding: 5px;
+    }
+
+    .output .dp {
+        height:70px;
+        width:70px;
+        border:1px solid black;
+        border-radius:40px;
+        margin-top:10px;
+        margin-left:10px;
+    }
+    .output .logo {
+        height:50px;
+        width:50px;
+        border:1px solid black;
+        border-radius:10px;
+        float: right;
+        margin-right: 10px;
+        margin-top:20px;
+    }
+    .output .student {
+        float: right;
+        margin-right:5px;
+    }
+    .output .college {
+        float: left;
+        padding-left: 0%;
+    }
+
+    .output li {
+        list-style-type: none;
+        margin:5px;
+    }  
+    }
+</style>
+</head>
+<body>
+    <header>
+            <img src="logo.png" alt="">
+             <ul>
+                 <li><a href="" target="_top">Home</a></li>
+                 <li><a href="HTML.html" target="_top">Html</a></li>
+                 <li><a href="CSS.html" target="_top">Css</a></li>
+                 <li><a href="#">Jquery</a></li>
+                 <li><a href="#">Javascript</a></li>
+                 <li><a href="#">Bootstrap</a></li>
+                 <li><a href="#">MiniProject</a></li>
+                 <li><a href="#">SQL</a></li>
+             </ul>
+         </header>
+        <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>Day1
+                    <ul>
+                        <li>Assignment
+                            <ul>
+                                <li><a href="">Assignment 1</li></a>
+                                <li><a href="">Assignment 2</li></a>
+                                <li><a href="">Assignment 3</li></a>
+                            </ul>
+                        </li>
+                        <li>Practice
+                            <ul>
+                                <li><a href="">Practice 1</li></a>
+                                <li><a href="">Practice 2</li></a>
+                                <li><a href="">Practice 3</li></a>
+                                <li><a href="">Practice 4</li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Day2
+                    <ul>
+                        <li>Assignment
+                            <ul>
+                                <li><a href="">Assignment 1</li></a>
+                                <li><a href="">Assignment 2</li></a>
+                            </ul>
+                        </li>
+                        <li>Practice
+                            <ul>
+                              <li><a href="https://www.w3schools.com/css/exercise.asp?filename=exercise_boxmodel1">Practice 1</li></a>
+                              <li><a href="https://www.w3schools.com/css/exercise.asp?filename=exercise_boxmodel2">Practice 2</li></a>
+                              <li><a href="https://www.w3schools.com/css/exercise.asp?filename=exercise_boxmodel3">Practice 3</li></a>
+                              <li><a href="https://www.w3schools.com/css/exercise.asp?filename=exercise_boxmodel4">Practice 4</li></a>
+                              <li><a href="">Practice 5</li></a>
+                              <li><a href="">Practice 6</li></a>
+                              <li><a href="">Practice 7</li></a>
+                              <li><a href="">Practice 8</li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Day3
+                    <ul>
+                        <li>Assignment
+                            <ul>
+                                <li><a href="">Assignment 1</li></a>
+                                <li><a href="">Assignment 2</li></a>
+                                <li><a href="">Assignment 3</li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="output">
+            <div class="parent">
+                <div class="card">
+                    <img class="dp" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9SPHGbT7zpUnQWxX6G23hhBVjxxAioJDoSNePax1i6FPVuO1bD2NweVg44RenkPB3vTI&usqp=CAU" alt="">
+                    <ul class="student">
+                        <li><strong>Student id: </strong>1</li>
+                        <li><strong>Name: </strong>Prathmesh Vyas</li>
+                        <li><strong>Date of birth: </strong>25/4/2002</li>
+                    </ul>
+                    <ul class="college">
+                        <li><strong>College Name: </strong>NSIT</li>
+                        <li><strong>College Address: </strong>Dehli</li>
+                        <li><a href="details.html">Show more</a></li>
+                    </ul>
+                    <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9SPHGbT7zpUnQWxX6G23hhBVjxxAioJDoSNePax1i6FPVuO1bD2NweVg44RenkPB3vTI&usqp=CAU" alt="">
+                    
+                </div>
+                <div class="card">
+                    <img class="dp" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9SPHGbT7zpUnQWxX6G23hhBVjxxAioJDoSNePax1i6FPVuO1bD2NweVg44RenkPB3vTI&usqp=CAU" alt="">
+                    <ul class="student">
+                        <li><strong>Student id: </strong>2</li>
+                        <li><strong>Name: </strong>Abhi gajjar</li>
+                        <li><strong>Date of birth: </strong>4/7/2002</li>
+                    </ul>
+                    <ul class="college">
+                        <li><strong>College Name: </strong>NSIT</li>
+                        <li><strong>College Address: </strong>Dehli</li>
+                        <li><a href="details.html">Show more</a></li>
+                    </ul>
+                    <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9SPHGbT7zpUnQWxX6G23hhBVjxxAioJDoSNePax1i6FPVuO1bD2NweVg44RenkPB3vTI&usqp=CAU" alt="">
+                    
+                </div>
+                <div class="card">
+                    <img class="dp" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9SPHGbT7zpUnQWxX6G23hhBVjxxAioJDoSNePax1i6FPVuO1bD2NweVg44RenkPB3vTI&usqp=CAU" alt="">
+                    <ul class="student">
+                        <li><strong>Student id: </strong>3</li>
+                        <li><strong>Name: </strong>Kush katva</li>
+                        <li><strong>Date of birth: </strong>21/3/2002</li>
+                    </ul>
+                    <ul class="college">
+                        <li><strong>College Name: </strong>NSIT</li>
+                        <li><strong>College Address: </strong>Dehli</li>
+                        <li><a href="details.html">Show more</a></li>
+                    </ul>
+                    <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9SPHGbT7zpUnQWxX6G23hhBVjxxAioJDoSNePax1i6FPVuO1bD2NweVg44RenkPB3vTI&usqp=CAU" alt="">
+                    
+                </div>
+                <div class="card">
+                    <img class="dp" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9SPHGbT7zpUnQWxX6G23hhBVjxxAioJDoSNePax1i6FPVuO1bD2NweVg44RenkPB3vTI&usqp=CAU" alt="">
+                    <ul class="student">
+                        <li><strong>Student id: </strong>4</li>
+                        <li><strong>Name: </strong>Nikhil</li>
+                        <li><strong>Date of birth: </strong>25/4/2002</li>
+                    </ul>
+                    <ul class="college">
+                        <li><strong>College Name: </strong>NSIT</li>
+                        <li><strong>College Address: </strong>Dehli</li>
+                        <li><a href="details.html">Show more</a></li>
+                    </ul>
+                    <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9SPHGbT7zpUnQWxX6G23hhBVjxxAioJDoSNePax1i6FPVuO1bD2NweVg44RenkPB3vTI&usqp=CAU" alt="">
+                    
+                </div>
+                <div class="card">
+                    <img class="dp" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9SPHGbT7zpUnQWxX6G23hhBVjxxAioJDoSNePax1i6FPVuO1bD2NweVg44RenkPB3vTI&usqp=CAU" alt="">
+                    <ul class="student">
+                        <li><strong>Student id: </strong>5</li>
+                        <li><strong>Name: </strong>rahul</li>
+                        <li><strong>Date of birth: </strong>25/4/2002</li>
+                    </ul>
+                    <ul class="college">
+                        <li><strong>College Name: </strong>NSIT</li>
+                        <li><strong>College Address: </strong>Dehli</li>
+                        <li><a href="details.html">Show more</a></li>
+                    </ul>
+                    <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9SPHGbT7zpUnQWxX6G23hhBVjxxAioJDoSNePax1i6FPVuO1bD2NweVg44RenkPB3vTI&usqp=CAU" alt="">
+                    
+                </div>
+            </div>
+        </div>
+</div>
+</body>
+</html>

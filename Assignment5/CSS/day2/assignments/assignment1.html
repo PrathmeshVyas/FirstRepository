@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 1</title>
+  <style>
+  header {
+    height: 100px;
+    background-color: rgb(61, 63, 64);
+  }
+  img {
+    padding: 10px;
+    float:left;
+    height: 50px;
+  }
+  .label {
+    margin-top:10px;
+    margin-right: 10px;
+    float: right;
+    height: fit-content;
+    width: fit-content;
+    border: 1px solid white;
+    padding: 10px;
+  }
+  label div {
+    margin:5px;
+    background-color: white;
+    width: 30px;
+    height:3px;
+  }
+  ul {
+    display: none;
+      
+  }
+  ul li {
+    padding: 20px;
+  }
+  #toggle:checked ~ ul {
+    background-color: rgb(61, 63, 64);
+    margin-top:50px;
+    display: block;
+    list-style-type: none;
+    text-align: center;
+    font-size: larger;
+    color: white;
+  }
+  li:hover {text-decoration: underline;}
+  #toggle {
+    visibility: collapse;
+  }
+  
+  @media screen and (min-width:700px){
+  li:hover {text-decoration: underline;}
+  header {
+    height:80px;
+    background-color: rgb(61, 63, 64);
+  }
+  img {
+    padding: 10px;
+    float:left;
+    height: 50px;
+  }
+  ul {
+    margin-top: -1px;
+    margin-right: 40px;
+    float: right;
+    display: flex;
+    gap:10px;
+    list-style-type: none;
+    font-size: larger;
+    color: white;
+
+  }
+  .label div {
+    display: none;
+  }
+  .label{
+    display: none;
+  }
+  ul li {
+    padding: 20px;
+
+  }
+  #toggle{display: none;}
+  }
+  @media screen and (min-width:1200px){
+  li:hover {text-decoration: underline;}
+  header {
+    height:80px;
+    background-color: rgb(61, 63, 64);
+  }
+  img {
+    padding: 10px;
+    float:left;
+    height: 50px;
+  }
+  ul {
+    margin-top: -1px;
+    margin-right: 40px;
+    float: right;
+    display: flex;
+    gap:125px;
+    list-style-type: none;
+    font-size: larger;
+    color: white;
+
+  }
+  .label div {
+    display: none;
+  }
+  .label{
+    display: none;
+  }
+  ul li {
+    padding: 20px;
+
+  }
+  #toggle{display: none;}
+  }
+  </style>
+</head>
+<body>
+<header>
+  <input type="checkbox" id="toggle">
+  <img src="https://res.cloudinary.com/zenbusiness/image/upload/v1670445040/logaster/logaster-2020-03-amazon-gif-logo.gif" alt="" class="logo">
+  <label for="toggle" class="label">
+    <div></div>
+    <div></div>
+    <div></div>
+  </label>
+  <ul class="tmenu">
+      <li>Home</li>
+      <li>ContactUs</li>
+      <li>About</li>
+      <li>Products</li>
+  </ul>
+</header>
+</body>
+</html>

@@ -4,6 +4,7 @@ body {
 header {
     border:1px solid black;
     height: 80px;
+    margin-top: 0px;
     background-color: rgb(62, 69, 74);
 }
 img {
@@ -58,14 +59,12 @@ header a:hover{
     background-color: rgb(62, 69, 74);
     
 }
-
 .home img {
     height: 300px;
     width: 350px;
     margin-left: 350px;
     margin-top: 50px;
 }
-
 .home h1 {
     color: rgb(255, 255, 255);
     font-family: sans-serif;
@@ -73,3 +72,9 @@ header a:hover{
     margin-top: 410px;
     margin-left:390px;
 }
+
+.css {
+    margin-top: -100px;
+}
+
+
