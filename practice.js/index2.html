@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1 id="h1"></h1>
+    <input type="text" id="a" placeholder="enter a">
+    <input type="text" id="b" placeholder="enter b">
+    <button type="submit" onclick="andb()">click</button>
+</body>  
+<script>
+    var string = "the sky is blue";
+    string = string.split(" ");
+    // console.log(string);
+    for (let i = string.length - 1; i >= 0; i--) {
+        // document.write(string[i], (" "));
+    }
+
+    function remove_duplicate() {
+        var size = parseInt(prompt("enter size of array"));
+        console.log(size);
+        var arr = [];
+        for (let i = 0; i < size; i++) {
+            let element = prompt("enter array element");
+            arr.push(element);
+        }
+        console.log(arr);
+        for (let i = 0; i < size; i++) {
+            for (let j = i + 1; j <= size; j++) {
+                if (arr[i] == arr[j]) {
+                    arr.splice(j, i);
+                }
+            }
+        }
+        console.log(arr)
+    }
+    // remove_duplicate()
+
+    function strrever() {
+        var a = prompt("enter string");
+        console.log(a);
+        for (let i = a.length - 1; i >= 0; i--) {
+            if ((a[i] == a[i].toUpperCase())) {
+                document.write(a[i].toLowerCase())
+            } else {
+                document.write(a[i].toUpperCase())
+            }
+        }
+    }
+    // strrever()
+
+    function count_negative() {
+        var arr = prompt("");
+        arr = arr.split(" ");
+        console.log(arr);
+        let n = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (parseInt(arr[i]) < 0) {
+                n++;
+            }
+        }
+        document.write(n);
+    }
+    // count_negative()
+    
+    function andb(){
+        var a=$("#a").val();
+        var b=$("#b").val();
+        if(Number(a)<Number(b)){
+            document.write(a/b);
+        }else{
+            document.write(a*b);
+        }
+        return 0;
+    }
+</script>
+
+</html>

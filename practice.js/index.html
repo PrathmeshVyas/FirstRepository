@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var name = "prathmesh";
+    var pro = new Promise((resolve, reject)=>{
+    setTimeout(function(){if (name=="prathmesh"){
+        resolve(name);
+    }else{
+        reject(name);
+    }}, 1000);
+   })
+
+   async function as(){
+    let res = await pro;
+    console.log(res);
+   }
+
+   as().then( function(){
+        console.log(name);
+   },
+   function(){
+        console.log(`is not ${name}`);
+   })
+
+   function add(a, b, cb){
+    cb(console.log(a*b));
+   }
+   function clbk(a, b){
+    console.log(a+b);
+   }
+   
+   fetch('data.json')
+    .then(response => response.json())
+    .then((obj1 function(){
+
+    }))
+
+</script>
+</html>
