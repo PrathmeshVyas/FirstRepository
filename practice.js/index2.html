@@ -32,14 +32,9 @@
             arr.push(element);
         }
         console.log(arr);
-        for (let i = 0; i < size; i++) {
-            for (let j = i + 1; j <= size; j++) {
-                if (arr[i] == arr[j]) {
-                    arr.splice(j, i);
-                }
-            }
-        }
-        console.log(arr)
+        var s1 = new Set(arr);
+        arr=[...s1];
+        console.log(arr);    
     }
     // remove_duplicate()
 
@@ -80,6 +75,77 @@
         }
         return 0;
     }
+
+    function descarr(){
+        var a = prompt("enter array elements");
+        a=a.split(" ");
+        j=a.length;
+        console.log(a);
+        for(let i=0;i<a.length; i++){
+            for(let j=i+1; j<a.length; j++){
+                if(a[i]<a[j]){
+                    let temp = a[i];
+                    a[i]=a[j];
+                    a[j]=temp;
+                }
+            }
+        }
+        console.log(a);
+    }    
+    //  descarr()
+
+    obj1 = {
+        a:"prathmesh",
+        b:"007",
+        c:"Radixweb"
+    }
+    console.log(obj1)
+    function fun1(){
+        delete obj1.b
+        console.log(obj1);
+    }
+    // fun1(obj1)
+
+
+    var arrstr = ['Ifbvibvreibvuirebvuibvrueibvuie', 'prathmesh', 'need', 'candyvnreibvkibvbvib']
+    console.log(arrstr)
+    function rl(arrstr){
+        var ls = "";
+        for(let i=0; i<arrstr.length; i++){
+            if(ls.length<arrstr[i].length){
+                ls=arrstr[i]
+                // console.log(ls);
+            }
+        }
+        console.log(ls);
+    };    
+    // rl(arrstr);
+    // var avg = prompt("enter array of number");
+    // avg=avg.split(" ");  
+    function avgg(){
+        let temp=0;
+        for(let i=0; i<avg.length; i++){
+            temp+=parseInt(avg[i]);
+        }
+        console.log(Number(temp/avg.length));
+    }
+    // avgg();
+
+    const person = {
+        name:"prathmesh",
+        age:"21"
+    }
+
+    const details = {
+        address:"maninagar",
+        company:"Radixweb"
+    }
+
+    function mergeobj(){
+                  
+    }
+
+    mergeobj()
 </script>
 
 </html>
