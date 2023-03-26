@@ -140,12 +140,81 @@
         address:"maninagar",
         company:"Radixweb"
     }
-
     function mergeobj(){
-                  
+        let employee = {
+            ...person,
+            ...details
+        }
+        console.log(employee);
     }
 
-    mergeobj()
+    // mergeobj()
+
+    function checkduplicate(){
+      var array = prompt("enter array numbers");
+      array=array.split("");
+      console.log(array);
+      var dict = {};
+      let c = [];
+      for(let i=0; i<array.length; i++){                   
+            if(c.includes(array[i])){
+                dict[array[i]]+=1;
+            }else{
+                c.push(array[i]);  
+                dict[array[i]]=1
+            }
+      }
+      console.log(dict);
+    }
+    // checkduplicate();
+
+    function largnum(){
+        let numarr=[];
+        let num = parseInt(prompt("enter size of array"));
+        for(let i=0; i<num; i++){
+            let ae = Number(prompt(`enter ${i} element`));
+            numarr.push(ae);
+        }
+        console.log(numarr);
+        let l = numarr[0];
+        for(let i=0; i<numarr.length; i++){
+            if(l<Number(numarr[i])){
+                l=numarr[i];
+            }
+        }
+        console.log(l);
+    }
+    // largnum()
+
+    function telltype(){
+        let a = prompt("enter a number");
+        if(a==parseInt(a)){
+            console.log("integer");
+        }else{
+            console.log("float");
+        }
+    }
+    // telltype();
+    
+    function remws(){
+        let string = prompt("enter a string");
+        console.log(string.replace(/\s/g, ''));
+        // console.log(string);
+        // // for(let i=0; i<string.length; i++){
+        // //     if(string[i]==" "){
+        // //         string=string.replace(string[i], "");
+        // //     }
+        // // }
+        // console.log(string);
+    }
+    // remws()
+
+    
+
+
+
+
+    
 </script>
 
 </html>
